@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.indexsize{
+  height: 300%;
+}
+
+#indexbody{
+  background: linear-gradient(#0047FD, #001B62);
+}
+
+#loginbody{
+  background-image: url(../imgs/fondito.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#topImgWelcome {
+    background-image: url(../imgs/imgtoplayerwelcome.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 60px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#topTutorial{
+    padding-top: 50px;
+}
+
+#titleSCS{
+    font-family: Arial Black;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+#subTitleSCS {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+#textSCS{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+#vdVideoTutorial{
+    padding: 20px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+#midPracticewhitUS{
+    padding: 40px 0px 100px 0px;
+}
+
+.pdf-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.pdf-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.pdf-item:hover {
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: aqua;   
+}
+.pdf-item img {
+    width: 350px;
+    height: 500px;
+}
+
+.btnPrefap{
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    border-color: #ffffff;
+    border-style: groove;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: #6A5ACD;
+    color: white;
+    cursor: pointer;
+}
+.btnPrefap:hover{
+    height: 100px;
+    width: 410px;
+    font-size: 20px;
+    background-color: #483D8B;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+    height: 100%;
+}
+  
+
+.login-form {
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+#buttonPlaceholder {
+    width: 200px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6A5ACD;
+    cursor: pointer;
+}
+
+.buttonPlaceholder:hover {
+    background-color: #483D8B;
+}
+
+.login-form a {
+    color: #483D8B;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#formulario{
+  width: 60%;
+  margin: auto;
+}
+
+#fondo{
+  background-size: cover;
+  padding-bottom: 10%;
+}
+
+#entradas{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  width: 100%;
+}
+
+#entradas > div{
+  padding-top: 2%;
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: #0502B5;
+}
+
+#cita{
+  color: aliceblue;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#dtFecha, #dtHora{
+  background-color: #7203FF;
+  color: white;
+  margin: auto;
+  width: 47.5%;
+  font-size: 25px;
+  padding-top: 5px;
+  border-radius: 7px;
+}
+
+#txtNombre1, #txtNombre2, #txtNombre3, #txtNum, #txtProfe{
+  background-color: #7203FF;
+  color: white;
+  margin: auto;
+  padding-top: 4px;
+  width: 60%;
+  font-size: 25px;
+  border-radius: 7px;
+}
+
+#instruccion{
+  color: aliceblue;
+  font-size: 130%;
+  align-self: center;
+}
+
+#Botones{
+  padding-bottom: 3%;
+}
+
+#btnAceptar, #btnCancelar{
+  border-radius: 7px;
+  font-size: 25px;
+  width: 49.3%;
+}
+
+#btnAceptar{
+  background-color: #002b99b2;
+  color: aliceblue;
+}
+
+.nav-item :hover{
+  background-color: #001B62;
+  
+}

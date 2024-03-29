@@ -1,0 +1,66 @@
+html{
+    height: 100%;
+}
+body{
+    background: linear-gradient(#0047FD, #001B62);
+    background-image: url(imgs/fondito.jpg);
+    background-size: cover;
+  
+}
+
+#formulario{
+    margin-bottom: 20px;
+    display: flex;
+    background: #0502B5;
+    width: 50%;
+    margin: auto;
+    max-width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#tes1{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    margin: 0 10px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+#fecha{
+    background-color: #7203FF;
+    color: white;
+    margin: auto;
+    width: 20%;
+    height: 10%;
+}
+
+.list-group-item {
+    background-color: #092ae4e7 !important;
+    color: aliceblue !important;
+    margin-top: 20px;
+}
+
+#Citas{
+    background: #0502B5;
+    width: 50%;
+    margin: auto;
+    color: aliceblue !important;
+}
+
+.list-group-item:hover {
+    background-color: rgb(124, 24, 190) !important;
+}
+
+#ciscote img{
+    margin-right: 20px;
+    flex: none;
+    background-size: cover;
+    width: 100px;
+    height: 50%;
+}
