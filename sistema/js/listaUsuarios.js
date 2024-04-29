@@ -153,6 +153,10 @@ document.addEventListener("DOMContentLoaded", () => {
             // Agregar un nuevo usuario a la lista
             usuarios.push({ nombre, correo, password, telefono });
             localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+            cargarTabla();
+            document.getElementById("mdlRegistro").style.display = "none";
+            
         } else if(document.querySelector("#mdlRegistro .modal-title").innerText === 'Editar') {
 
             const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -187,11 +191,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Limpiar formulario después de agregar/editar usuario
-        document.getElementById("mdlRegistro").querySelector("form").reset();
-        document.getElementById("mdlRegistro").querySelector("form").hide();
+
+        const mdlRegistro = bootstrap.Modal.getInstance('#mdlRegistro');
+            mdlRegistro.hide();
+        
 
         // Recargar la tabla de usuarios
-        limpiarTabla();
         cargarTabla();
     });
 
@@ -239,6 +244,8 @@ document.addEventListener("DOMContentLoaded", () => {
             txtTelefono.style.display = "block";
             lblTelefono.style.display = "block";
 
+            document.getElementById("txtNombre").focus();
+
         } else if (operacion === 'Agregar'){
 
             // Mostrar campos de contraseña al agregar un nuevo usuario
@@ -255,6 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
             txtTelefono.style.display = "block";
             lblTelefono.style.display = "block";
 
+            document.getElementById("txtNombre").focus();
 
         } else {
             
@@ -280,10 +288,11 @@ document.addEventListener("DOMContentLoaded", () => {
             txtConfirmarPassword.style.display = "block";
             lblPassword.style.display = "block";
             lblConfirmarPassword.style.display = "block";
-        }
 
-        // Enfocar en el campo de nombre al abrir el modal
-        document.getElementById("txtNombre").focus();
+            document.getElementById("txtPassword").focus();
+
+        }
+        
     });
 
     // Función para mostrar mensajes de error
@@ -318,6 +327,7 @@ function revisarControl(e, min, max) {
 function cargarTabla() {
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
     let tbody = document.querySelector("#tblUsuarios tbody");
+    tbody.innerHTML = "";
     for (let usuario of usuarios) {
         let fila = document.createElement("tr");
         let celda = document.createElement("td");
@@ -361,9 +371,4 @@ function inicializarDatos() {
 
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
     }
-}
-
-function limpiarTabla() {
-    let tbody = document.querySelector("#tblUsuarios tbody");
-    tbody.innerHTML = ""; // Limpiar contenido de la tabla
 }
