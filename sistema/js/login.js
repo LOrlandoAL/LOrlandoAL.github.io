@@ -1,0 +1,11 @@
+document.addEventListener("DOMContentLoaded",()=>{
+    document.getElementById("btnMostrarOcultar").addEventListener("click",e=>{
+        if(e.target.innerText=="Ver"){
+            e.target.innerText="Ocultar";
+            document.getElementById("txtPassword").type='text';
+        }else{
+            e.target.innerText="Ver";
+            document.getElementById("txtPassword").type='password';
+        }
+    });
+});

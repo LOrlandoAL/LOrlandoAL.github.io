@@ -1,0 +1,83 @@
+:root{
+    --fondo:#d87093;
+    --fondo-resalte:#90415c;
+    --fondo-resalte2:#862d4d;
+}
+.bg-pink{
+    background-color:var(--fondo);
+}
+
+nav .form-control{
+    border-radius: 0;
+    border:none;
+    border-bottom: 5px solid var(--fondo-resalte);
+}
+
+nav .dropdown-item:hover {
+    color: white;
+    background-color: var(--fondo-resalte);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+#carouselExampleAutoplaying{
+    height: calc(100vh - 3rem);
+}
+
+#carouselExampleAutoplaying img{
+    height: calc(100vh - 3rem);
+}
+
+.btn-pink{
+    background-color: var(--fondo-resalte);
+    color: white;
+}
+
+.btn-pink:hover{
+    background-color: var(--fondo-resalte2);
+    color: white;
+}
+
+.featurette-divider{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main{
+    min-height: calc(100vh - 11rem);
+}
+
+footer{
+    border-top: 5px solid var(--fondo);
+}
+
+form.validado input:invalid, .novalido{
+    border-color: red;
+}
+
+form.validado input:valid, .valido{
+    border-color: green;
+}
+
+form.validado input:invalid + div,
+.novalido + div{
+    display: block;
+    color: red;
+}
+
+form.validado input:valid + div,
+.valido + div{
+    display: none;
+}
+
+form div div{
+    display: none;
+}
+
+
+tr > td > button{
+    display: contents;
+    margin-right: 5px;
+}
