@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(180deg, #F4E2D1, #E9D5B7, #D6AA9F, #987185, #423736);
+    color: #423736;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #423736;
+}
+
+.navbar-brand {
+    color: #F4E2D1;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    color: #E9D5B7;
+}
+
+.btn-custom {
+    background-color: #987185;
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #D6AA9F;
+    color: #423736;
+}
+
+.info-panel {
+    background-color: #D6AA9F;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info-panel a {
+    color: #F4E2D1;
+    text-decoration: none;
+}
+
+.info-panel a:hover {
+    text-decoration: underline;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #E9D5B7;
+    margin: 20px auto;
+}
+
+.menu {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.menu .btn {
+    margin: 5px;
+    width: 150px;
+}
