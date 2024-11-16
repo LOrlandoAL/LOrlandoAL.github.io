@@ -1,35 +1,34 @@
 body {
-    background: linear-gradient(180deg, #F4E2D1, #E9D5B7, #D6AA9F, #987185, #423736);
-    color: #423736;
+    color: #373737;
     font-family: 'Arial', sans-serif;
 }
 
 .navbar {
-    background-color: #423736;
+    background-color: #373737;
 }
 
 .navbar-brand {
-    color: #F4E2D1;
+    color: #F4F4F4;
     font-size: 1.5rem;
 }
 
 .navbar-brand:hover {
-    color: #E9D5B7;
+    color: #DCD0C0;
 }
 
 .btn-custom {
-    background-color: #987185;
+    background-color: #C0B283;
     color: white;
     border: none;
 }
 
 .btn-custom:hover {
-    background-color: #D6AA9F;
-    color: #423736;
+    background-color: #DCD0C0;
+    color: #373737;
 }
 
 .info-panel {
-    background-color: #D6AA9F;
+    background-color: #C0B283;
     padding: 15px;
     border-radius: 8px;
     color: white;
@@ -38,7 +37,7 @@ body {
 }
 
 .info-panel a {
-    color: #F4E2D1;
+    color: #F4F4F4;
     text-decoration: none;
 }
 
@@ -50,7 +49,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #E9D5B7;
+    border: 5px solid #DCD0C0;
     margin: 20px auto;
 }
 
