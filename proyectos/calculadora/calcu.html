@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-72">
+    <div id="display" class="bg-gray-200 text-right text-2xl p-4 mb-4 rounded">0</div>
+
+    <div class="grid grid-cols-4 gap-2">
+      <button class="btn bg-red-500" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="appendValue('(')">(</button>
+      <button class="btn" onclick="appendValue(')')">)</button>
+      <button class="btn bg-blue-300" onclick="appendValue('/')">÷</button>
+
+      <button class="btn" onclick="appendValue('7')">7</button>
+      <button class="btn" onclick="appendValue('8')">8</button>
+      <button class="btn" onclick="appendValue('9')">9</button>
+      <button class="btn bg-blue-300" onclick="appendValue('*')">×</button>
+
+      <button class="btn" onclick="appendValue('4')">4</button>
+      <button class="btn" onclick="appendValue('5')">5</button>
+      <button class="btn" onclick="appendValue('6')">6</button>
+      <button class="btn bg-blue-300" onclick="appendValue('-')">−</button>
+
+      <button class="btn" onclick="appendValue('1')">1</button>
+      <button class="btn" onclick="appendValue('2')">2</button>
+      <button class="btn" onclick="appendValue('3')">3</button>
+      <button class="btn bg-blue-300" onclick="appendValue('+')">+</button>
+
+      <button class="btn col-span-2" onclick="appendValue('0')">0</button>
+      <button class="btn" onclick="appendValue('.')">.</button>
+      <button class="btn bg-green-400" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <style>
+    .btn {
+      @apply bg-gray-100 p-4 rounded text-xl hover:bg-gray-300 transition;
+    }
+  </style>
+  <script src="calculogic.js"></script>
+</body>
+</html>
